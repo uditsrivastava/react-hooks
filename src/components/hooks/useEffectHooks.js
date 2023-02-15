@@ -13,7 +13,7 @@ const UseEffectHooks  = () => {
         <>
             <h1>useEffect Hook</h1>
             <div>Count is {count}</div>
-            <button onClick={() => setCount(count + 1)}>Increment Count</button>
+            <button onClick={() => count === 10 ? count : setCount(count + 1)}>Increment Count</button>
         </>
     )
 
